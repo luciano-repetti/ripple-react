@@ -2,9 +2,9 @@
 
 Simple modifiable ripple effect library for react.js
 
-<!-- ## Demo
+## Demo
 
-Live demo:  -->
+Live demo: https://ripple-effect-reactjs.netlify.app/
 
 ## Install
 
