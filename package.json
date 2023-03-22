@@ -12,6 +12,18 @@
     "classnames": "^2.3.2",
     "prop-types": "^15.8.1"
   },
+  "keywords": [
+    "material components",
+    "material design",
+    "ripple",
+    "react",
+    "ripple-effect",
+    "wave"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/immdipu/ripple-effect-js"
+  },
   "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

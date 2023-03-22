@@ -2,16 +2,19 @@
     position: relative;
     overflow: hidden;
     width: fit-content;
+    padding: 0;
+    border: 0;
+    display: inline-block;
 }
 
 .ripple {
     border-radius: 50%;
     position: absolute;
     transform: scale(0);
-    animation: ripple 0.6s linear;
+    animation: ripples 0.6s linear;
 }
 
-@keyframes ripple {
+@keyframes ripples {
     to {
         transform: scale(2.51);
         opacity: 0;
