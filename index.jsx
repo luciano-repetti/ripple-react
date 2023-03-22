@@ -1,7 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function RippleButton({ children, color = "red", speed = 1000, radius = 2 }) {
+function RippleButton({
+  children,
+  color = "red",
+  speed = 1000,
+  radius = 2,
+  width = 100,
+}) {
   function createRipple(event) {
     // Create a new ripple element
     const button = event.currentTarget;
@@ -23,7 +29,7 @@ function RippleButton({ children, color = "red", speed = 1000, radius = 2 }) {
   return (
     <div
       className="ripple-button"
-      style={{ borderRadius: `${radius}px` }}
+      style={{ borderRadius: `${radius}px`, width: `${width}%` }}
       onClick={createRipple}
     >
       {children}
