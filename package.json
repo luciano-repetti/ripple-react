@@ -1,6 +1,6 @@
 {
   "name": "ripple-effect-reactjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An easy-to-use JavaScript library for creating a ripple effect on buttons and other elements. This library allows users to customize the color and speed of the ripple animation, and can be used as a wrapper element to add ripple effects to child elements",
   "main": "index.jsx",
   "scripts": {
