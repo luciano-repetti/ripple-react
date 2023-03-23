@@ -18,20 +18,23 @@ To app.js file add:
 
 ```js
 import RippleButton from "ripple-effect-reactjs";
+
 function App() {
   return (
-    <RippleButton color={black} speed={2000} radius={3}>
+    <RippleButton color={black} speed={2000} radius={3} width={50}>
       <button>Click me</button>
     </RippleButton>
   );
 }
+
 export default App;
 ```
 
 ## Options
 
-| Properties    |   values    |         default |
-| ------------- | :---------: | --------------: |
-| color         |  hex, rgb   | rgb(83, 82, 82) |
-| speed         | millisecond |            1000 |
-| border-radius |     px      |               2 |
+| Properties |   values    |         default |
+| ---------- | :---------: | --------------: |
+| color      |  hex, rgb   | rgb(83, 82, 82) |
+| speed      | millisecond |            1000 |
+| radius     |     px      |               2 |
+| width      | percentage  |             100 |
