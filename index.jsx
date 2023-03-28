@@ -7,6 +7,7 @@ function RippleButton({
   speed = 1000,
   radius = 2,
   width = 100,
+  height,
 }) {
   function createRipple(event) {
     // Create a new ripple element
@@ -26,10 +27,17 @@ function RippleButton({
     });
   }
 
+  const heightStyle =
+    typeof height === "number" ? `${height}px` : height || "100%";
+
   return (
     <div
       className="ripple-button"
-      style={{ borderRadius: `${radius}px`, width: `${width}%` }}
+      style={{
+        borderRadius: `${radius}px`,
+        width: `${width}%`,
+        height: heightStyle,
+      }}
       onClick={createRipple}
     >
       {children}
