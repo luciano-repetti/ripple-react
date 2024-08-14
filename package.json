@@ -1,12 +1,15 @@
 {
-  "name": "ripple-effect-reactjs",
-  "version": "1.0.6",
-  "description": "An easy-to-use JavaScript library for creating a ripple effect on buttons and other elements. This library allows users to customize the color and speed of the ripple animation, and can be used as a wrapper element to add ripple effects to child elements",
-  "main": "index.jsx",
+  "name": "ripple-react",
+  "version": "1.1.0",
+  "description": "A customized version of an easy-to-use JavaScript library for creating a ripple effect on buttons and other elements.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc && npm run css-build",
+    "css-build": "postcss src/**/*.css --dir dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dipu chaurasiya",
+  "author": "Dipu Chaurasiya, Luciano Repetti",
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.3.2",
@@ -22,10 +25,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/immdipu/ripple-effect-js"
+    "url": "https://github.com/luciano-repetti/ripple-react"
   },
   "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "cpx": "^1.5.0",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+    "react-dom": "^18.2.0",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "styles"
+  ]
 }
