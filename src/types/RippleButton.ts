@@ -1,8 +1,4 @@
-import { FC, ReactNode } from 'react';
-declare module 'ripple-react/RippleButton' {
-    const RippleButton: FC<RippleButtonProps>;
-    export default RippleButton;
-}
+import { ReactNode } from "react";
 
 export interface RippleButtonProps {
     children: ReactNode;

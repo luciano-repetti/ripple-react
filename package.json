@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && npm run css-build",
-    "css-build": "postcss src/**/*.css --dir dist/",
+    "build": "tsc --project tsconfig.json && npm run css-build && tsc-alias -p tsconfig.json",
+    "css-build": "postcss src/**/*.css --dir dist/styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dipu Chaurasiya, Luciano Repetti",
@@ -36,6 +36,7 @@
     "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tsc-alias": "^1.8.10",
     "typescript": "^5.5.4"
   },
   "files": [

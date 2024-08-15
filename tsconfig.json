@@ -16,7 +16,14 @@
     "rootDir": "./src",
     "jsx": "react",
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@types/*": ["./src/types/*"],
+      "@styles/*": ["./src/styles/*"]
+    },
   },
   "include": [
     "src/**/*.ts",

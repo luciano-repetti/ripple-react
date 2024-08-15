@@ -1,5 +1,5 @@
 import React, { MouseEvent } from "react";
-import styles from '../RippleButton.module.css';
+import styles from '@styles/RippleButton.module.css';
 
 export interface RippleEffectProps {
     event: MouseEvent<HTMLDivElement>;
