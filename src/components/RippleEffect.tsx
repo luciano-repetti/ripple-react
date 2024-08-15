@@ -1,4 +1,5 @@
 import React, { MouseEvent } from "react";
+import styles from '../RippleButton.module.css';
 
 export interface RippleEffectProps {
     event: MouseEvent<HTMLDivElement>;
@@ -19,7 +20,7 @@ export const createRippleEffect = ({ event, color, speed }: RippleEffectProps) =
     ripple.style.top = `${event.clientY - buttonRect.top - d / 2}px`;
     ripple.style.backgroundColor = color;
     ripple.style.animationDuration = `${speed}ms`;
-    ripple.classList.add("ripple");
+    ripple.classList.add(styles.ripple);
 
     ripple.addEventListener("animationend", () => {
         ripple.remove();

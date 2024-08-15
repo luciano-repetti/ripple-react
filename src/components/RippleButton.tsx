@@ -1,15 +1,9 @@
+"use client"
+
 import React, { ReactNode, MouseEvent } from "react";
 import { createRippleEffect } from "./RippleEffect";
-import styles from '../styles/RippleButton.module.css';
-
-interface RippleButtonProps {
-    children: ReactNode;
-    color?: string;
-    speed?: number;
-    radius?: number;
-    width?: number | string;
-    height?: number | string;
-}
+import styles from '../RippleButton.module.css';
+import { RippleButtonProps } from "../types/RippleButton";
 
 export const RippleButton: React.FC<RippleButtonProps> = ({
     children,
