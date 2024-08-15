@@ -1,5 +1,5 @@
 {
-  "name": "ripple-react",
+  "name": "react-effect-ripple",
   "version": "1.1.0",
   "description": "A customized version of an easy-to-use JavaScript library for creating a ripple effect on buttons and other elements.",
   "main": "dist/index.js",
